@@ -25,15 +25,7 @@ class ChatScreen extends React.Component {
 
             return {
                 ...u,
-                messages: [{
-                    text: "HEY",
-                    to: false,
-                    time: moment()
-                }, {
-                    text: "HI",
-                    to: true,
-                    time: moment()
-                }],
+                messages: [],
                 recentMessage: moment()
             }
         });
