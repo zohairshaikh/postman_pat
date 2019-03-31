@@ -56,5 +56,5 @@ io.on('connection', function (socket) {
 
 
 http.listen(80, "0.0.0.0", () => {
-    console.log('Running server on 0.0.0.0:3000');
+    console.log('Running server on 0.0.0.0:80');
 });

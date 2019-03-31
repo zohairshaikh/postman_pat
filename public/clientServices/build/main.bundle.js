@@ -674,7 +674,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var sock
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"BASE_API_URL\", function() { return BASE_API_URL; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"BASE_SOCKET_URL\", function() { return BASE_SOCKET_URL; });\nvar BASE_SOCKET_URL = 'localhost:3000';\nvar BASE_API_URL = 'http://localhost:3000';\n\n\n//# sourceURL=webpack:///./constants.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"BASE_API_URL\", function() { return BASE_API_URL; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"BASE_SOCKET_URL\", function() { return BASE_SOCKET_URL; });\nvar BASE_SOCKET_URL = '35.247.183.103';\nvar BASE_API_URL = 'http://35.247.183.103';\n\n\n//# sourceURL=webpack:///./constants.js?");
 
 /***/ }),
 
