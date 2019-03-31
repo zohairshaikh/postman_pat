@@ -1,0 +1,140 @@
+.main-chat-container {
+    display: flex;
+    height: 100%;
+}
+
+
+.friend-list-container {
+    width: 300px;
+    height: inherit;
+    box-shadow: 2px 1px 6px 1px #868686;
+    position: fixed;
+    z-index: 1;
+}
+
+.chat-layout-container {
+    height: inherit;
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.friend-list-header {
+    padding: 20px;
+    border-bottom: 2px solid #DB4437;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    background: #fff;
+}
+
+.friendlist-header-logo {
+    font-size: 20px;
+    color: #DB4437;
+    font-weight: bold;
+    padding-top: 4px;
+}
+
+.friendlist-send-btn {
+    color: #4285F4;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 6px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out
+}
+
+.friendlist-send-btn:hover {
+    box-shadow: 1px 1px 5px;
+}
+
+.friendlist-element {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.friendlist-element:hover {
+    background-color: #d6eaff;
+
+}
+
+.friendlist-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #4285F4;
+}
+
+.friend-list-content {
+    font-size: 13px;
+    font-weight: 300;
+    color: grey;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chatlayout-header-container {
+    padding: 22px;
+    border-bottom: 2px solid #DB4437;
+}
+
+.chatlayout-header {
+    font-size: 24px;
+    color: #DB4437;
+    font-weight: bold;
+}
+
+.chatlayout-body {
+}
+
+.chatlayout-bubble-container {
+    overflow-y: scroll;
+    padding-left: 100px;
+    padding-right: 100px;
+    background: #e8e8e8;
+    position: absolute;
+    width: 100%;
+    height: -webkit-fill-available;
+    padding-bottom: 200px;
+}
+
+.chatlayout-inputsend-container {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+    padding-left: 20%;
+    padding-right: 20%;
+    background: #fff;
+    padding-top: 20px;
+}
+
+.friendlist-nochat-text {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 14px;
+}
+
+.chatlayout-nomessage-arrow {
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+}
+
+
+.chatlayout-info-notext {
+    margin-top: 10px;
+    font-size: medium;
+}
+
+.pp-image {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    height: 300px;
+}

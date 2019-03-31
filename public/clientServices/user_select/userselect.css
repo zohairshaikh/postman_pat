@@ -1,0 +1,16 @@
+
+.userselect-loadercontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+.userselect-listelement {
+    cursor: pointer;
+}
+
+.userselect-listelement:hover {
+    background-color: #d6eaff;
+}

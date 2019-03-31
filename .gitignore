@@ -1,0 +1,6 @@
+.idea/*
+node_modules/*
+package-lock.json
+public/clientServices/node_modules/*
+public/clientServices/package-lock.json
+
