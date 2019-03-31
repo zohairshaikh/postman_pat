@@ -42,7 +42,6 @@ class FriendListHeader extends React.Component {
     render() {
         const {newChatModal} = this.state;
         const {users} = this.props;
-        console.log('users', users);
         return (
             <div className="friend-list-header">
                 <p className="friendlist-header-logo">Postman Pat</p>

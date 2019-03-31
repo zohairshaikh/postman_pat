@@ -2,13 +2,17 @@ import {socketConnect} from 'socket.io-react';
 import React from "react";
 import FriendListHeader from './FriendListHeader.jsx';
 import {ListGroup, ListGroupItem} from "reactstrap";
+import Input from "reactstrap/es/Input";
 
 
 class FriendList extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            filteredUsers: [],
+            searchQ: ''
+        };
     }
 
     onUserSelected = (user) => {
@@ -20,7 +24,6 @@ class FriendList extends React.Component {
             return null
         }
 
-        console.log(user.messages);
         return (
             <ListGroupItem onClick={this.onUserSelected.bind(this, user)} className="friendlist-element"
                            key={`friendlist:${i}`}>
@@ -43,13 +46,42 @@ class FriendList extends React.Component {
         }
     };
 
+    searchFriends = (event) => {
+        const query = event.target.value;
+        let {users} = this.props;
+        if (!query) {
+            this.setState({
+                filteredUsers: []
+            })
+        }
+        users = users.filter((user) => {
+            return user.name.toLowerCase().includes(query.toLowerCase());
+        });
+        this.setState({
+            filteredUsers: users,
+            searchQ: query
+        })
+    };
+
     render() {
-        const {users} = this.props;
+        let {users} = this.props;
+        let {filteredUsers, searchQ} = this.state;
+
+        if (filteredUsers.length ||  searchQ) {
+            users = filteredUsers;
+        }
+
         return (
             <div className="friend-list-container">
 
                 <FriendListHeader {...this.props}/>
+
+                <div className="friendlsit-searchcontainer">
+                    <Input placeholder={"Search"} value={searchQ} onChange={this.searchFriends}/>
+                </div>
+
                 <ListGroup>
+
                     {
                         users.map(this.renderFriendChat)
                     }

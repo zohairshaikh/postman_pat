@@ -49,14 +49,6 @@ utils.generateGlobalHardCodedData();  // Using global user list as hardcoded dat
 
 io.on('connection', function (socket) {
 
-    var userId;
-    socket.on('new player', function (id, name) {
-        userId = id = parseInt(id);
-    });
-
-    socket.on('disconnect', function (data) {
-        console.log('user disconnected', data);
-    });
     socket.on('newMessage', function (msg) {
         io.emit("broadcastMessage:f" + msg.from + "-t" + msg.to, msg);
     });

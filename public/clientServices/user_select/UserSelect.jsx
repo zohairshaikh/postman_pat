@@ -31,7 +31,6 @@ class UserSelect extends React.Component {
             loading: true
         });
         apiservices.getUserList().then((successResp) => {
-            console.log(successResp)
             this.setState({
                 users: successResp.data.users,
                 loading: false

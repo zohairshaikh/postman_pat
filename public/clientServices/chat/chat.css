@@ -116,7 +116,7 @@
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 170px;
     font-size: 14px;
 }
 
@@ -137,4 +137,11 @@
     right: 50px;
     bottom: 0;
     height: 300px;
+}
+
+.friendlsit-searchcontainer {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
