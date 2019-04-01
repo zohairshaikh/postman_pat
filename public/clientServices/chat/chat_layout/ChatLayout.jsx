@@ -44,11 +44,11 @@ class ChatLayout extends React.Component {
 
     componentDidUpdate() {
         // Scroll as new elements come along
-        var len = this.state.selectedChatUser.messages.length - 1;
-        const node = ReactDOM.findDOMNode(this['_div' + len]);
-        if (node) {
-            node.scrollIntoView();
-        }
+        // var len = this.state.selectedChatUser.messages.length - 1;
+        // const node = ReactDOM.findDOMNode(this['_div' + len]);
+        // if (node) {
+        //     node.scrollIntoView();
+        // }
     }
 
     render() {
